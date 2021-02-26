@@ -1,0 +1,39 @@
+.contact-card {
+    width: 10em;
+    height:10em;
+    background-color: white;
+    box-shadow: 10px 15px 30px rgb(0 0 0 / 18%);
+}
+
+.contact-card:hover {
+    background-color: #cabbd4;
+    transition: 0.3s;
+}
+.contact-card img {
+    position: relative;
+    max-width:80%;
+    max-height: 80%;
+    margin: auto;
+    padding-top: 15%;
+
+}
+
+/* * {
+    border: 1px dotted red;
+} */
+
+#faq p {
+    padding-left: 3em;
+}
+
+#footer img {
+    max-width:20em;
+}
+
+#add-ons ul {
+    list-style-type:none
+}
+#add-ons i {
+    padding-right: 0.5em;
+    color: #887497;
+}
