@@ -1,3 +1,7 @@
+/* * {
+    border: 1px dashed red;
+} */
+
 .contact-card {
     width: 10em;
     height:10em;
@@ -21,7 +25,7 @@
 #easter p {
     color: white;
 }
-#easter h4 {
+#easter h4,h6 {
     color: #887497;
 }
 
@@ -74,3 +78,11 @@
     padding-bottom: 60px;
     padding-left: 0px;
   }
+
+ #menu ul {
+     padding-left: 0px;
+ }
+
+ #menu ul ul {
+    padding-left: 20px;
+}
