@@ -1,1093 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Tabletop Charcuterie</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/Tabletop_Charcuterie_logo.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <!--link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet"-->
-  <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
-  
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Delicious - v2.2.1
-  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
- <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-191536806-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-191536806-1');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TableTop Charcuterie</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-
 <body>
-
-  <!-- ======= Top Bar ======= -->
-  <!-- <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
-    <div class="container text-right">
-      <i class="icofont-phone"></i> +1 5589 55488 55
-      <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM - 23:00 PM
+<!-- partial:index.partial.html -->
+<header>
+  <div class="header-top clearfix " id="header-top">
+    <h1 class="l-left"><a href="#home">Tabletop Charcuterie</a></h1>
+    <a class="l-right toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+  </div>
+ 
+  <nav class="hide ">
+    <ul id="menu">
+      <li data-menuanchor="foodmenu">
+        <a href="#foodmenu" title="Menu">Menu</a>
+      </li>
+      <li data-menuanchor="testimonial">
+        <a href="#testimonial" title="Testimonials">Testimonials</a>
+      </li>
+      <li data-menuanchor="faq">
+        <a href="#faq" title="Frequently asked question">FAQ</a>
+      </li>
+      <li data-menuanchor="about">
+        <a href="#about" title="About us">About</a>
+      </li>
+      <li data-menuanchor="order">
+        <a href="#order" title="Order Form">Contact Us & Order Form</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+ 
+<div id="fullpage">
+  <section class="section home fp-auto-height-responsive active">
+    <img src="assets/img/web-logo-peach.png" alt="">
+    <div id="link-container">
+      <a href="#order">Order Now</a>
+      <a href="#foodmenu">Menu</a>
     </div>
-  </section> -->
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex align-items-center">
-
-      <div class="logo mr-auto">
-        <!-- <h1 class="text-light"><a href="index.html"><span>Tabletop Charcuterie</span></a></h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/webbanner.png.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <!-- <li><a href="#about">About</a></li> -->
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#specials">Specials</a></li>
-          
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact-us">Contact</a></li>
-
-          <li class="book-a-table text-center"><a href="#contact-us">Order</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
+  </section>
+  
+<!--   food menu -->
+  <section class="section menu ">
+<!--     main tab group -->
+    <div class="tab-container">
+          <button class="tablink" onclick="openTab('box', this)"  id="defaultTab">Boxes</button>
+          <button class="tablink" onclick="openTab('platter', this)" >Platters</button>
+          <button class="tablink" onclick="openTab('events', this)">Events</button>
+          <button class="tablink" onclick="openTab('addons', this)">Add Ons</button>
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background: url(assets/img/title-photo1.jpg); background-size:cover; background-position-x: center; ">
-            <div class="carousel-container">
-              <div class="carousel-content" style="width: 80%">
-                <h2 class="animate__animated animate__fadeInDown"><img src="assets/img/web logo purple.png" class="rounded" style="max-width:300px;" alt="..."></h2>
-                  
-                                
-                <p class="animate__animated animate__fadeInUp">Deluxe beautiful charcuterie boxes and boards at affordable prices. Delivered to your door in Vancouver and the Lower Mainland. Bringing people together through the shared love of charcuterie</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#contact-us" class="btn-book animate__animated animate__fadeInUp scrollto">Order Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <!-- <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Slide 3 -->
-          <!-- <div class="carousel-item" style="background: url(assets/img/slide/slide-3.jpg);">
-            <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a> -->
-
-      </div>
+    
+<!--     subtab groups -->
+    <div class="subtab-container" id="box" >
+        <button class="tablink" onclick="openPage('date-night', this)">Date Night</button>
+        <button class="tablink" onclick="openPage('single', this)">Individual</button>
+        <button class="tablink" onclick="openPage('strawberrybox', this)">Strawberry</button>
     </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container-fluid">
-
-        <div class="row">
-
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about-us-strawberries.jpg");'>
-            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
-          </div>
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-
-            <div class="content">
-              <h3>Who we are</h3>
-              <p>
-                Hi! I'm Annie. I'm the owner and creator of Tabletop Charcuterie. I first fell in love with charcuterie during my honeymoon trip to Italy. We found this quaint little charcuterie bar in a less visited area of Rome and decided to go inside. The variety and choices that takes place in assembling and eating the board fascinated me. Coming home to Vancouver, I started looking for local sources of charcuterie meats and cheeses to create my own.
-              </p>
-
-              <p>
-                I started making charcuterie displays for many of my social gatherings. My friends then started to ask me to make them for their bridal showers, girls night in, birthday parties, and so on. They always seem to be a crowd favorite, and definitely not camera shy.
-              </p>
-              <p>
-                With the pandemic happening in 2020, I don't get to create these boards as much as I like to. Thus, I decided to start my own business of making charcuterie boxes and boards to share my love of charcuterie with others. 
-              </p>
-              <p class="font-italic text-dark ">
-                Each of our board is a unique sample of flavour combinations and ideas that I am discovering and learning about each day. Our boards and boxes are affordably priced, so we can share our creations with as many people possible. Come join me in my journey discovering the world of charcuterie!
-              </p>
-              <!-- <ul>
-                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
-              </p> -->
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    
-
-    <!-- ======= Menu Section ======= -->
-    <!-- <section id="menu" class="menu">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Our <span>Selections</span></h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">Show All</li>
-              <li data-filter=".filter-boxes">Boxes</li>
-              <li data-filter=".filter-addon">Add Ons</li>
-              <li data-filter=".filter-specialty">Specialty</li> 
-            </ul>
-          </div>
-        </div>
-
-        <div class="row menu-container">
-
-          <div class="col-lg-6 menu-item filter-boxes">
-            <div class="menu-content">
-              <a href="#">Date Night Box </a><span>$60</span>
-            </div>
-            <div class="menu-ingredients">
-              A variety of 3 cured meats, 3 cheeses, grapes & fresh fruits, crackers, dips & jelly, dried fruits & nuts, olives and chocolate.
-
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-boxes">
-            <div class="menu-content">
-              <a href="#">Quarantine Box</a><span>$35</span>
-            </div>
-            <div class="menu-ingredients">
-              A variety of 2 cured meats, 2 cheeses, grapes & fresh fruits, crackers, dips & jelly, dried fruits & nuts, olives and chocolate. Minimum order of 2 boxes
-
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Crab Cake</a><span>$7.95</span>
-            </div>
-            <div class="menu-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Caesar Selections</a><span>$8.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Tuscan Grilled</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Mozzarella Stick</a><span>$4.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Greek Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Spinach Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Lobster Roll</a><span>$12.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Menu Section -->
-
-    <!-- <section id="easter" class="events">
-      <div class="container">
-        <div class="section-title">
-          <h2><span>Father's Day</span> Specials</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="assets/img/dad1.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="assets/img/dad2.jpg" alt="Second slide">
-                </div>
-                
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-8 py-5">
-            <h4>Father's Day box <span style="font-size: 0.7em; padding-left: 2em; ">Feeds 1-2</span><span style="float: right">$60</span></h4>
-            <p>Your dad would love our Father's Day box. Filled to the brim with over 3/4 pound of meats and cheeses, and a Stella Artois to wash it all down when he's done. No nonsense, just great food. </p>
-            <p>Includes 2 meats, 3 cheeses, garnishes, toasted baguettes, crackers, dark chocolate dipped pretzels, a personalized note card, and of course, the bottle of Stella Artois.</p>
-            
-            
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center mt-2">
-            <a href="#contact-us" class="btn-book animate__animated animate__fadeInUp scrollto">Order Now</a>
-          </div>
-          
-        </div>
-      </div>
-    </section> -->
-
-    <!-- ======= menu Section ======= -->
-    <section id="menu" class="specials">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Our <span>Selections</span></h2>
-          <h5><small>Delivery is included for Surrey, North Delta, and Langley City.<br> Pictures intended to show size and variety, as each order we make is unique.<br> Vegetarian, gluten free, and pork free options available. $15 for vegan option.</small></h5>
-          </div>
-
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Date night box</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">Individual box</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-3">Veggie lover's box</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-4">The Social Platter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-5">The Feast</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-6">Dipped strawberries</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-7">Add ons</a>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-md-6 details order-2 order-lg-1">
-                    <h3>The Date Night Box <span style="float: right">$60</span></h3>
-                    <p class="font-italic">The perfect gift for any occasion, a quiet night in, or to enjoy with a friend. Each box is gorgeously curated and assembled on the day of delivery or pickup</p>
-                    <p>In each box you can expect a variety of 3 cured meats, 3 cheeses, seasonal fruits & vegetables, crackers, dips & jelly, dried fruits & nuts, olives, chocolates and more. 
-                      </p>
-                      <p class="text-dark"><strong>Each box is 10" X 7". Feeds 2-4</strong> </p>
-                  </div>
-                  <div class="col-md-6 text-center order-1 order-lg-2">
-                    <img src="assets/img/datenight.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-md-6 details order-2 order-lg-1">
-                    <h3>The Individual Box<span style="float: right">$35</span></h3>
-                    <p class="font-italic">Perfectly sized for a scrumptious meal for one, or as an appetizer to share with a friend.</p>
-                    <p>In each box you can expect a variety of 2 cured meats, 2 cheeses, fresh fruits & vegetables, crackers, dips & jelly, dried fruits & nuts, olives, chocolates and more.  </p>
-                      <p class="text-dark"><strong>Each box is 7" X 5.5". Minimum order of 2 boxes for delivery. Feeds 1-2 </strong> </p>
-                  </div>
-                  <div class="col-md-6 text-center order-1 order-lg-2">
-                    <img src="assets/img/single.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <div class="row">
-                  <div class="col-md-6 details order-2 order-lg-1">
-                    <h3>Veggie lover's box <span style="float: right">$60</span></h3>
-                    <p class="font-italic">Meatless, but bursting with flavour. Our hand crafted cheese box combines the perfect pairing of cheese, fruits, and vegetables. Send some love to your veggie lover friends!</p>
-                    <p>In each box you can expect 3 different cheeses, seasonal fruits & vegetables, a flavourful meat substitute, and garnishes including nuts, chocolate, dried fruit, olives, chocolates and more.</p>
-                    <p class="text-dark"><strong>Each box is 10" X 7". Feeds 2-4. Add $15 to make it vegan.</strong> </p>
-                  </div>
-                  <div class="col-md-6 text-center order-1 order-lg-2">
-                    <img src="assets/img/veggie.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-4">
-                <div class="row">
-                  <div class="col-md-6 details order-2 order-lg-1">
-                    <h3>The Social Platter <span style="float: right">$120</span></h3>
-                    <p class="font-italic">The perfect night in for your intimate gathering. This item comes on a custom wooden serving platter. Artfully designed, tasty eats, ready to serve and hassle free entertaining. </p>
-                    <p>On the handmade charcuterie board you can expect a variety of 4 cured meats, 4 cheeses, fruits & vegetables, crackers & bread, dips & jelly, dried fruits & nuts, olives, chocolates, and more. Feeds 4 hungry cheese plate lovers.</p>
-                    <p class="text-dark"><strong>Platter is 14" in diameter. Feeds 4-8.</strong> </p>
-                  </div>
-                  <div class="col-md-6 text-center order-1 order-lg-2">
-                    <img src="assets/img/social.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-5">
-                <div class="row">
-                  <div class="col-md-6 details order-2 order-lg-1">
-                    <h3>The Feast <span style="float: right">$150</span></h3>
-                    <p class="font-italic">Need to impress your hard to please family? Our biggest to-go board is the answer. Beautifully crafted and delivered right to your doorstep. Your party will be too busy snapping photos of the board to judge the rest of your home.</p>
-                    <p>On the board you can expect a variety of 5 cured meats, 5 cheeses, fresh fruits & vegetables, crackers & bread, dips & jelly, dried fruits & nuts, olives, chocolates, and more. 
-                      </p>
-                      <p class="text-dark"><strong>Platter is 22" X 12". Feeds 6-12. </strong> </p>
-                  </div>
-                  <div class="col-md-6 text-center order-1 order-lg-2">
-                    <img src="assets/img/feast.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-6">
-                <div class="row">
-                  <div class="col-md-6 details order-2 order-lg-1">
-                    <h4>Premium dipped strawberries <span style="float: right">$70</span></h3>
-                    <p class="font-italic">Need something sweet for your girls night, or a gift for that special someone? Our dipped strawberries box is the answer! </p>
-                    <p>A box of 18 gorgeously decorated strawberries in your choice of dark, milk, or white chocolate. Up to 4 different designs can be made in one box.</p>
-                    
-                      <p class="text-dark"><strong>18 decorated dipped strawberries, enough for eating AND instagramming </strong> </p>
-                  </div>
-                  <div class="col-md-6 text-center order-1 order-lg-2">
-                    <img src="assets/img/premiumstrawberries18_cropped.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-7">
-                <div class="row">
-                  <div id="add-ons" class="col-md-6 details order-2 order-lg-1">
-                    <h3>Add Ons &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3>
-                    <ul>
-                      <li>
-                        <i class="bx bxs-send"></i>Extra meat<span style="float:right;">$8</span>
-                      </li>
-                      <li><i class="bx bxs-send"></i>Extra cheese<span style="float:right;">$8</span></li>
-                      <li><i class="bx bxs-send"></i>Dipped Strawberries<span style="float:right;"></span>
-                      <ul>
-                        <li><i class="bx bxs-send"></i>Minimum order of 6</li>
-                        <li><i class="bx bxs-send"></i>Dark, milk, or white chocolate</li>
-                        <li><i class="bx bxs-send"></i>Basic dipped strawberries<span style="float:right;">$3.00 each</span></li>
-                        <li><i class="bx bxs-send"></i>Deluxe decorated strawberries<span style="float:right;">$3.50 each</span></li>
-                        
-                      </ul>
-                      </li>
-                      <li><i class="bx bxs-send"></i>Side order of breads and crackers<span style="float:right;">$8</span></li>
-                      <li><i class="bx bxs-send"></i>Fresh Roses<span style="float:right;">$4 each</span></li>
-                      <ul>
-                        <li><i class="bx bxs-send"></i>Minimum order of 6</li>
-                        
-                      </ul>
-                      <li><i class="bx bxs-send"></i>Wine - Red or white<span style="float:right;">From $25</span></li>
-                      
-                      
-                    </ul>
-                  </div>
-                  <div class="col-md-6 text-center order-1 order-lg-2">
-                    <img src="assets/img/addon.jpg" alt="" class="img-fluid rounded">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End menu Section -->
-
-    <!-- ======= special Section ======= -->
-    <section id="specials" class="why-us">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Special <span>Orders</span></h2>
-          <p>Contact us directly to inquire about these orders</p>
-          </div>
-
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box">
-              
-              <h4><span>Large orders</span></h4>
-              <p>Individually sized gifts for your next virtual office gathering, birthday parties, and other events. Also makes great gifts for your clients.</p> <br><br>
-
-                <p>Priced from only $12/person. Minimum order of 10. Includes delivery to one location of your choice.</p>
-
-                <br><br>
-                <a class="btn-specialmenu animate__animated animate__fadeInUp" href="assets/tabletop-charcuterie-large-order-menu.pdf">Large order menu</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box">
-              
-              <h4><span>The Addict</span></h4>
-              <p>Who's ready for a charcuterie box subscription? Get the best deal on our Date Night Box and sample everything the world of charcuterie has to offer.
-                <br><br>
-                <p>Commit to 6 Date Night boxes to enjoy at the special price of $50 per box. Delivery date will be on the 1st Sunday of February, April, June, August, October, December.  </p>
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box">
-              
-              <h4><span>Custom grazing tables</span></h4>
-              <p>Grazing tables for your next event. We do birthdays, baby showers, weddings, bachelorette parties, corporate events, and so much more. Multiple packages available to choose from to fit your party size and budget. 2 weeks notice required</p>
-                <br><br>
-                <a class="btn-specialmenu animate__animated animate__fadeInUp" href="assets/tabletop-charcuterie-large-order-menu.pdf">Grazing Table Menu</a>
-              
-            </div>
-
-        </div>
-
-      </div>
-    </section>
-    
-    <!-- End Whu Us Section -->
-
-    <!-- ======= Events Section ======= -->
-    <!-- <section id="events" class="events">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Organize Your <span>Events</span> in our Restaurant</h2>
-        </div>
-
-        <div class="owl-carousel events-carousel">
-
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Birthday Parties</h3>
-              <div class="price">
-                <p><span>$189</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Private Parties</h3>
-              <div class="price">
-                <p><span>$290</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Custom Parties</h3>
-              <div class="price">
-                <p><span>$99</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    
-    <!-- End Events Section -->
-
-
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
-      <div class="container-fluid">
-
-        <div class="section-title">
-          <h2>Get <span>Inspired</span></h2>
-         
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/box-8.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/box-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/box-5.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/box-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/box-11.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/box-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/box-20.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/box-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/box-18.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/box-5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/box-19.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/box-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/box-16.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/box-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/box-4.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/box-8.jpg" alt="" class="img-fluid ">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
-
-    <!--Frequently asked questions Section-->
-    <section id="faq">
-      <div class="container">
-        <div class="section-title">
-          <h2>Frequently Asked <span>Questions</span></h2>
-        </div>
-        <div>
-          <h5>How much is it for delivery?</h4>
-          <p>Delivery is free for Surrey, Langley City, and North Delta on orders over $60. Delivery to Richmond, New Westminster, Tsawassen and Tri-cities area is $20. Vancouver and Burnaby is $30. Otherwise, we will let you know the delivery costs when you place the order(~$30+ depending on distance from Surrey)</p>
-          <h5>I want to pick up my own box, where are you located?</h4>
-          <p>We are located in Surrey Sullivan Heights area. We will let you know the pick up location once the order is confirmed</p>
-          <h5>How do I confirm an order?</h5>
-          <p>Once we have responded to your order request, we will send you an email for you to E-Transfer the payment. At least 50% must be received 48 hours before your order is to be delivered.</p>
-          <h5>Can I request specific items or modify the box?</h5>
-          <p>Items in the box, especially fruits and vegetables are quite seasonal, but we will try our best to accommodate. If you have any dietary needs (or got a picky eater around) please let us know.</p>
-          <h5>How long does the charcuterie box last?</h5>
-          <p>Each box or board is freshly assembled right before delivery or pickup. You should eat it within 3 hours of receiving the order for the freshest taste or keep it refrigerated.</p>
-          <h5>I changed my mind, can I cancel my order?</h5>
-          <p>Orders may be cancelled and refunded with 48 hour notice from delivery time. If notified between 24-48 hours, 50% will be refunded. No refunds for notices within 24 hours. </p>
-          <h5>I would like to use my own board, could I do that?</h5>
-          <p>Of course, just give us the dimensions of your board and we can give you a quote. You can drop off the board at your convenience.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= New contact us section Section ======= -->
-    <section id="contact-us" class="chefs">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact <span>Us</span></h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-3"></div>
-          <div class="col-lg-3 col-md-12">
-            <div class="mx-auto justify-content-center">
-              <a style="display:block" href="https://forms.gle/LBCAYfp2hYL3Ep5j7">
-                <div class="box rounded-circle contact-card mx-auto">
-                  <img src="assets/img/google-forms.png" alt="" class="mx-auto d-block">
-                
-                </div>
-              </a>
-              
-              <div>
-                <p style="text-align: center; padding-top:1em;">Ordering Form</p>
-              </div>
-              
-            </div>
-            
-          </div>
-
-          <div class="col-lg-3 col-md-12">
-            <div class="mx-auto justify-content-center">
-              <a style="display:block" href="https://www.instagram.com/tabletopcharcuterie/">
-                <div class="box rounded-circle contact-card mx-auto">
-                  <img src="assets/img/1200px-Instagram_logo_2016.png" alt="" class="mx-auto d-block">
-                
-                </div>
-              </a>
-              
-              <div>
-                <p style="text-align: center; padding-top:1em;">Message us directly</p>
-              </div>
-              
-            </div>
-            
-          </div>
-          <div class="col-lg-3"></div>
+    <div class="subtab-container" id="platter">
+        <button class="tablink defaultpage" onclick="openPage('social', this)" >Social Platter</button>
+        <button class="tablink" onclick="openPage('feast', this)">The Feast</button>
+    </div>
+    <div class="subtab-container" id="events">
+        <button class="tablink" onclick="openPage('largeorder', this)">Large Orders</button>
+        <button class="tablink" onclick="openPage('grazing', this)">Grazing Tables</button>
+    </div>
+    <div class="subtab-container" id="addons">
+      
+      <button class="tablink" onclick="openPage('extra', this)">Extras</button>
+      <button class="tablink" onclick="openPage('wine', this)">Wine</button>
+      <button class="tablink" onclick="openPage('notecard', this)">Note Card</button>
+    </div>
+
+<!-- tab contents -->
+    <div id="date-night" class="tabcontent">
+      <div class="owl-carousel owl-theme owl-datenight">
+        <img src="assets/img/datenight-6-square.jpg"  class="" alt="">
+        <img src="assets/img/datenight-1-square.jpg" alt="">
         
-
-        </div>
-
+        <img src="assets/img/datenight-5-square.jpg"  class="" alt=""> 
+        <img src="assets/img/datenight-7-square.jpg" alt="">
       </div>
-    </section>
-    <!-- End Chefs Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials" class="testimonials">
-      <div class="container">
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <div class="stars">
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-            </div>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <div class="stars">
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-            </div>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <div class="stars">
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-            </div>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <div class="stars">
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-            </div>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <div class="stars">
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-              <i class="icofont-star"></i>
-            </div>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Testimonials Section -->
-    <!-- ======= Book A Table Section ======= -->
-        <!-- <section id="book-a-table" class="book-a-table">
-          <div class="container">
-    
-            <div class="section-title">
-              <h2>Contact <span>Us</span></h2>
-              <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-            </div>
-
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-lg-4 col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6 form-group">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6 form-group">
-                  <input type="text" class="form-control" name="date" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6 form-group">
-                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6 form-group">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-    
-          </div>
-        </section> -->
-        <!-- End Book A Table Section -->
-
-
-    <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2><span>Contact</span> Us</h2>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-      </div>
-
-      <div class="map">
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-      <div class="container mt-5">
-
-        <div class="info-wrap">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 info">
-              <i class="icofont-google-map"></i>
-              <h4>Location:</h4>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="icofont-clock-time icofont-rotate-90"></i>
-              <h4>Open Hours:</h4>
-              <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="icofont-envelope"></i>
-              <h4>Email:</h4>
-              <p>info@example.com<br>contact@example.com</p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="icofont-phone"></i>
-              <h4>Call:</h4>
-              <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
-            </div>
-          </div>
-        </div>
-
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-          <div class="form-row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
-
-      </div>
-    </section> -->
-    <!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="logo" style="padding-bottom: 1em;"><img src="assets/img/Website banner logo.png" alt=""class="img-fluid"></div>
-      <div class="social-links">
         
-        <a href="https://www.facebook.com/tabletopcharcuterie/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/tabletopcharcuterie/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Tabletop Charcuterie</span></strong>. All Rights Reserved
+      <h3>Date Night Box</h3>
+      <p>The right gift for any occasion, a quiet night in, or to enjoy with a friend. Includes 3 meats, 3 cheeses, and a selection of fruits, veggies, nuts, crackers, and much more. <br>Each box is 10" X 7", serves 2-4</p>
+      <h4>$60</h4>
+    </div>
+    <div id="single" class="tabcontent">
+      <div class="owl-carousel owl-theme owl-single">
+        <img src="assets/img/single-1-square.jpg" alt="">
+        <img src="assets/img/single-2.jpg" alt="">
+        <img src="assets/img/single-3.jpg" alt="">
+
       </div>
       
+      <h3>Individual Box</h3>
+      <p>Perfectly sized meal for one, or appetizer for two. Includes 2 meats, 2 cheeses, and a selection of fruits, veggies, nuts, crackers, and much more.<br>Each box is 7" X 5.5", serves 1-2</p>
+      <h4>$35</h4>
     </div>
-  </footer><!-- End Footer -->
+    <div id="strawberrybox" class="tabcontent">
+      <div class="owl-carousel owl-theme owl-strawberry">
+        <img src="assets/img/strawberry-box-2.jpg" alt="">
+        <img src="assets/img/strawberry-box-7.jpg" alt="">
+        <img src="assets/img/strawberry-box-4.jpg" alt="">
+        <img src="assets/img/strawberry-box-5.jpg" alt="">
+        
+      </div>
+      <h3>Dipped Strawberries</h3>
+      <p>A box of 12 dipped trawberries in your choice of dark, milk or white chocolate. $40 for classic dipped strawberries, or $55 for decorated strawberries in your choice of accent color. 6 roses can also be added in the box for $24.</p>
+      <h4>$40/$55+</h4>
+    </div>
+    <div id="social" class="tabcontent">
+      <div class="owl-carousel owl-theme owl-social">
+        <img src="assets/img/social-2-square.jpg" alt="">
+        <img src="assets/img/social-1-square.jpg"  class="" alt=""> 
+        <img src="assets/img/social-3-square.jpg"  class="" alt="">
+        <img src="assets/img/social-4.jpg" alt="">
+      </div>
+        
+      <h3>The Social Platter</h3>
+      <p>Staying in for your small gathering? Order our social platter delivered to your door. Includes 4 meats, 4 cheeses, and a selection of fruits, veggies, nuts, crackers, and much more.<br> Served on a 14" platter, feeds 4-8 </p>
+      <h4>$120</h4>
+    </div>
+    <div id="feast" class="tabcontent">
+      <div class="owl-carousel owl-theme owl-feast">
+        <img src="assets/img/feast-2.jpg" alt="">
+        <img src="assets/img/feast-3-square.jpg"  class="" alt=""> 
+        <img src="assets/img/feast-4-square.jpg"  class="" alt=""> 
+      </div>
+      <h3>The Feast</h3>
+      <p>Impress that hard to please family with our largest to-go platter. Includes 5 meats, 5 cheeses, and a selection of fruits, veggies, nuts, crackers, and much more.<br> Served on a 22"x12" platter, feeds 6-12</p>
+      <h4>$150</h4>
+    </div>
+    <div id="largeorder" class="tabcontent">
+      <img src="assets/img/event-1-square.jpg" alt="">
+      <h3>Large Orders (10+)</h3>
+      <p>Individually sized gifts for your next virtual office gathering, birthday party, giveaways, and more. Special price for 10+ Individual Boxes.  2 week notice required</p>
+      <div class="largeordermenu"><a href="https://tabletopcharcuterie.com/assets/tabletop-charcuterie-large-order-menu.pdf">Large Order Menu</a></div>
+    </div>
+    <div id="grazing" class="tabcontent">
+      <img src="assets/img/feast-1.jpg" alt="">
+      <h3>Grazing Tables</h3>
+      <p>Grazing tables for your next event. We do birthdays, baby showers, weddings, bachelorette parties, corporate events, and so much more. Multiple packages available to fit your party size and budget. 2 weeks notice required</p>
+      <div class="largeordermenu"><a href="https://tabletopcharcuterie.com/assets/tabletop-charcuterie-large-order-menu.pdf">Grazing Table Menu</a></div>
+    </div>
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    <div id="extra" class="tabcontent">
+      <img src="assets/img/extra-1.jpg" alt="">
+      <h3>Extras</h3>
+      <p>Side order of bread and crackers for carb enthusiasts</p>
+      <h4>$15</h4>
+      <p>Extra serving of meat or cheese when you're extra hungry</p>
+      <h4>$8 each</h4>
+    </div>
+    <div id="wine" class="tabcontent">
+      <img src="assets/img/wine-2-square.jpg" alt="">
+      <h3>Wines</h3>
+      <p>Gift a bottle of wine to go with your charcuterie board. Subject to availability of your chosen wine.</p>
+      <h4>Market Price +$15 pick up fee</h4>
+    </div>
+    <div id="notecard" class="tabcontent">
+      <img src="assets/img/notecard-1-square.jpg" alt="">
+      <h3>Note Card</h3>
+      <p>Send a special note with your gift to say what you won't say on the phone.</p>
+      <h4>$5</h4>
+    </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  </section>
 
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <section class="section testimonial ">
+    <h2>Testimonials</h2> 
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true}'>
+      <div class="gallery-cell">
+        <i class="fas fa-quote-left"></i>
+        <p>My family and I thoroughly enjoyed the box. It was so good, very well done, and presentation was beautiful. We will definitely be ordering again soon</p>
+        <h4>- Destiny E.</h4>
+      </div>
+      <div class="gallery-cell">
+        <i class="fas fa-quote-left"></i>
+        <p>OMG beautiful!!! Wow I'm so impressed thank you! My friend will be pleasantly surprised</p>
+        <h4>- Amisha</h4>
+      </div>
+      <div class="gallery-cell"><i class="fas fa-quote-left"></i>
+        <p>Thank you so much for the gorgeous work and they are so happy. The absolute best</p>
+        <h4>-@wonderbgc</h4></div>
+        <div class="gallery-cell"><i class="fas fa-quote-left"></i>
+          <p>My sister and I really enjoyed it. It was surprisingly more filling than we thought it'd be. I would definitely recommend you to my friends. Thank you so much</p>
+          <h4>-Millen K.</h4></div>
+      <div class="gallery-cell"><i class="fas fa-quote-left"></i>
+        <p>The box was soo good!! and so much food! The strawberries were perfect! Thank you so much</p>
+        <h4>- Cat R.</h4></div>
+      <div class="gallery-cell"><i class="fas fa-quote-left"></i>
+        <p>Wow! It's amazing. And my friend loves it. You will be getting much more business from this I'm sure. Beautiful presentation. Thank you so much</p>
+        <h4>-Wendy S</h4></div>
+    <div class="gallery-cell"><i class="fas fa-quote-left"></i>
+        <p>My friend said it was amazing! Better than any birthday cake. Thanks again</p>
+        <h4>-Clarice</h4></div>
+      <div class="gallery-cell"><i class="fas fa-quote-left"></i>
+        <p>Thank you for making the celebration so special. My niece was so surprised and loved it. </p>
+        <h4>-Eugenia</h4></div>
+
+    </div>
+  </section>
+  
+  
+  <section class="section faq ">
+    <h2>Frequently Asked Questions</h2> 
+    <div>
+          <h5 class="faq-question">How much is it for delivery?</h5>
+          <p class="faq-answer hidefaq">Delivery is free for Surrey, Langley City, and North Delta on orders over $60. Delivery to Richmond, New Westminster, Tsawassen and Tri-cities area is $20. Vancouver and Burnaby is $30. Otherwise, we will let you know the delivery costs when you place the order(~$30+ depending on distance from Surrey)</p>
+          <h5 class="faq-question">I want to pick up my own box, where are you located?</h5>
+          <p class="faq-answer hidefaq">We are located in Surrey Sullivan Heights area. We will let you know the pick up location once the order is confirmed</p>
+          <h5 class="faq-question">How do I confirm an order?</h5>
+          <p class="faq-answer hidefaq">Once we have responded to your order request, we will send you an email for you to E-Transfer the payment.</p>
+          <h5 class="faq-question">Can I request specific items or modify the box?</h5>
+          <p class="faq-answer hidefaq">Items in the box, especially fruits and vegetables are quite seasonal, but we will try our best to accommodate. If you have any dietary needs (or got a picky eater around) please let us know.</p>
+          <h5 class="faq-question">How long does the charcuterie box last?</h5>
+          <p class="faq-answer hidefaq">Each box or board is freshly assembled right before delivery or pickup. You should eat it within 3 hours of receiving the order for the freshest taste or keep it refrigerated.</p>
+          <h5 class="faq-question">I changed my mind, can I cancel my order?</h5>
+          <p class="faq-answer hidefaq">Orders may be cancelled and refunded with 48 hour notice from delivery time. If notified between 24-48 hours, 50% will be refunded. No refunds for notices within 24 hours. </p>
+          <h5 class="faq-question">I would like to use my own board, could I do that?</h5>
+          <p class="faq-answer hidefaq">Of course, just give us the dimensions of your board and we can give you a quote. You can drop off the board at your convenience.</p>
+        </div>
+  </section>
+  <section class="section about ">
+    <div>
+      <h2>About Us</h2> 
+    <p>
+      Hi! I'm Annie. I'm the owner and creator of Tabletop Charcuterie. I first fell in love with charcuterie during my honeymoon trip to Italy. We found this quaint little charcuterie bar in a less visited area of Rome and decided to go inside. The variety and choices that takes place in assembling and eating the board fascinated me. Coming home to Vancouver, I started looking for local sources of charcuterie meats and cheeses to create my own.</p>
+<p class="hidewithmobile">
+I started making charcuterie displays for many of my social gatherings. My friends then started to ask me to make them for their bridal showers, girls night in, birthday parties, and so on. They always seem to be a crowd favorite, and definitely not camera shy.</p>
+<p class="hidewithmobile">
+With the pandemic happening in 2020, I don't get to create these boards as much as I like to. Thus, I decided to start my own business of making charcuterie boxes and boards to share my love of charcuterie with others.
+    </p>
+    <p>
+Each of our board is a unique sample of flavour combinations and ideas that I am discovering and learning about each day. Our boards and boxes are affordably priced, so we can share our creations with as many people possible. Come join me in my journey discovering the world of charcuterie!
+    </p>
+    </div>
+    
+  </section>
+  <section class="section order ">
+    <h2>Ordering Information</h2>
+    
+
+    
+<!--     Google form -->
+    <h4>Please fill out our Google Form to make an inquiry or place an order</h4>
+    <p>We will get back to you within a few hours to confirm your order and provide payment details</p>
+    <div class="links">
+    <a id="googleform" href="https://forms.gle/LBCAYfp2hYL3Ep5j7"><div>
+      <img src="https://tabletopcharcuterie.com/assets/img/google-forms.png" alt="">
+    </div></a>
+    <a id="googleform" href="https://forms.gle/LBCAYfp2hYL3Ep5j7"><div>
+      <img id="instagramlogo" src="https://tabletopcharcuterie.com/assets/img/1200px-Instagram_logo_2016.png" alt="">
+    </div></a>
+      </div>
+    <h4>Check out our instagram for more videos, pictures, and to chat with us directly</h4>
+  </section>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script  src="./script.js"></script>
 
 </body>
-
 </html>
