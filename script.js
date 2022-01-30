@@ -45,7 +45,7 @@ $('#fullpage').fullpage({
 
 //owl carousel
 $(document).ready(function(){
-  $(".owl-datenight, .owl-single, .owl-strawberry, .owl-social, .owl-feast").owlCarousel({
+  $(".owl-datenight, .owl-single, .owl-strawberry, .owl-social, .owl-feast, .owl-valentine").owlCarousel({
     items:1,
     loop:true,
     margin:10,
