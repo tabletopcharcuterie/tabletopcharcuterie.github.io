@@ -470,6 +470,12 @@ h5 {
   font-size: 1.2em;
 }
 
+#extra h4 {
+  font-size: 1.1em;
+  padding-top: 0.1em;
+  padding-bottom: 1.1em;
+}
+
 
 /* *********************************************************************************** */
 
@@ -517,6 +523,9 @@ h3 {
   padding: 0px 30px;
 }
 
+.tablink {
+  font-size: 0.9em;
+}
 
 .testimonial .gallery-cell{
     margin: 10px;
