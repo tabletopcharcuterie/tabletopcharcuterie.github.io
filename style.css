@@ -499,8 +499,9 @@ h3 {
 
 /* Styling each section */
 .home {
-  background:linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ), url('https://lh3.google.com/pw/AM-JKLU_HUW8FncYBfLgVhptVKut3KKrBXDaUrb5z2IiIV3-bWKjVoVY-nPNCAkLYoIBKn8ASFLrshfJp_n1ygXcQsIh4hYkA5A=w1174-h880-no?authuser=0');
+  background:linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ), url('assets/img/grazing-1.jpg');
   background-position: center;
+  background-size: cover;
   position: relative;
 }
 
@@ -520,7 +521,7 @@ h3 {
   font-size: 1.4em;
 }
 .tabcontent p {
-  padding: 0px 30px;
+  padding: 0px 10px;
 }
 
 .tablink {

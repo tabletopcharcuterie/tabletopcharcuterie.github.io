@@ -19,7 +19,7 @@ for(let i = 0; i<menuLinks.length; i++){
 
  
 $('#fullpage').fullpage({
-  sectionsColor: ['#3dcfa1', '#F4F4F4', '#ff8b20', 'var(--theme-color-light)', '#f1ebf5'],
+  sectionsColor: ['#2d2e2e', '#F4F4F4', '#ff8b20', 'var(--theme-color-light)', '#f1ebf5'],
   sectionSelector: 'section',
   navigation: true,
   controlArrows: false,
